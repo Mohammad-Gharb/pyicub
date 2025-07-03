@@ -36,19 +36,19 @@ jobs:
         # Install Sphinx and theme from pyicub-doc's requirements.txt
         pip install -r requirements.txt
 
-    - name: Install pyicub project dependencies (if needed for sphinx-apidoc)
-      # This step is crucial if your pyicub code imports libraries that sphinx-apidoc needs
-      # to successfully parse your code's docstrings and structure.
-      # ADJUST THIS SECTION based on your pyicub project's actual dependencies.
-      run: |
-        cd pyicub-code-repo
-        # Example: if your pyicub is a pip installable package
-        # pip install -e .
-        # Example: if your pyicub has a requirements.txt
-         pip install -r requirements.txt
-        # Example: if it just needs numpy
-        # pip install numpy
-        echo "No specific pyicub dependencies installed for sphinx-apidoc. Remove this echo if you add actual install commands."
+#    - name: Install pyicub project dependencies (if needed for sphinx-apidoc)
+#      # This step is crucial if your pyicub code imports libraries that sphinx-apidoc needs
+#      # to successfully parse your code's docstrings and structure.
+#      # ADJUST THIS SECTION based on your pyicub project's actual dependencies.
+#      run: |
+#        cd pyicub-code-repo
+#        # Example: if your pyicub is a pip installable package
+#        # pip install -e .
+#        # Example: if your pyicub has a requirements.txt
+#         pip install -r requirements.txt
+#        # Example: if it just needs numpy
+#        # pip install numpy
+#        echo "No specific pyicub dependencies installed for sphinx-apidoc. Remove this echo if you add actual install commands."
 
     - name: Generate API reStructuredText files using sphinx-apidoc
       run: |
