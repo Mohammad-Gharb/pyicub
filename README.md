@@ -8,7 +8,7 @@ Introduction
 
 Documentation
 --------------
-The official documentation is available at [PyiCub Documentation]([https://pyicub-doc.readthedocs.io/en/latest/index.html]).
+The official documentation is available at [PyiCub Documentation](https://pyicub-doc.readthedocs.io/en/latest/index.html).
 
 
 Requirements
